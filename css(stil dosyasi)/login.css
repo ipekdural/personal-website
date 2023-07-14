@@ -1,0 +1,85 @@
+#main-navbar {
+    padding: 20px;
+  }
+  
+  #main-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #62760c;
+    border-bottom: 5px solid #535204;
+    border-right: 5px solid #535204;
+    border-top: 1px solid #535204;
+    border-left: 1px solid #535204;
+    border-radius: 10px;
+    margin: 10px;
+    width: fit-content;
+  }
+  
+  #main-navbar a:first-child {
+    margin-left: 0;
+  }
+  
+  #main-navbar a:last-child {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #main-navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    #main-navbar a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    #main-navbar a:first-child {
+      margin-top: 0;
+    }
+  
+    #main-navbar a:last-child {
+      margin-bottom: 0;
+    }
+  }
+  #giris {
+    border-bottom: 5px solid #535204;
+    border-right: 5px solid #535204;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 50px;
+    background-color: #62760c;
+    color: #aaa94f; padding:10px;
+  
+    margin: 10px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  a:hover {
+    background-color: #8ba515;
+  }
+  a:active {
+    background-color: #a5af76;
+  }
+  #giris:hover {
+    background-color: #8ba515;
+  }
+  #giris:active {
+    background-color: #a5af76;
+  }
+  body{
+    background-image: url(/images/arkaplan1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"Roboto Mono";
+    border: 20px solid #361500;
+    margin: 0;
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+
+    <link rel="stylesheet" href="/css(stil dosyasi)/iletisim.css" />
+    <link rel="stylesheet" href="/css(stil dosyasi)/genel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="/javascript/iletisim.js"></script>
+  </head>
+
+  <header>
+    <div style="display: inline-block; margin-top: 20px; width: 100%"></div>
+    <a id="giris" href="login.php"
+      ><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</a
+    >
+    <div style="display: inline-block; width: 88%; text-align: right">
+      <nav id="main-navbar">
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Hakkımda</a>
+        <a href="ozgecmis.html"
+          ><i class="fa-solid fa-user-graduate"></i> Özgeçmiş</a
+        >
+        <a href="sehrim.html"><i class="fa-solid fa-city"></i> Şehrim</a>
+        <a href="mirasimiz.html">Mirasımız</a>
+        <a id="ilgi" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+        <a
+          style="
+            background-color: #704327;
+            color: #b5b486;
+            border-bottom: 5px solid #b5b486;
+            border-right: 5px solid #b5b486;
+            border-top: 1px solid #b5b486;
+            border-left: 1px solid #b5b486;
+            border-radius: 10px;
+          "
+          href="iletisim.html"
+          ><i class="fa-solid fa-envelope"></i> İletişim</a
+        >
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <form action="/gonder.php" method="POST" onsubmit="return validateForm()">
+      <label for="isimsoyisim"
+        >İsim-Soyisim
+        <h5 style="display: table-caption; color: rgb(222, 62, 62)">*</h5>
+        :</label
+      >
+      <input
+        type="text"
+        id="isimsoyisim"
+        name="isim-soyisim"
+        placeholder="İsminizi girin.."
+      />
+
+      <label for="mail"
+        >E-mail
+        <h5 style="display: table-caption; color: rgb(222, 62, 62)">*</h5>
+        :</label
+      >
+      <input
+        type="email"
+        id="mail"
+        name="e-posta"
+        placeholder="example@gmail.com"
+      />
+
+      <label for="telefon"
+        >Telefon
+        <h5 style="display: table-caption; color: rgb(222, 62, 62)">*</h5>
+        :</label
+      >
+      <input
+        type="tel"
+        id="telefon"
+        name="telefon"
+        placeholder="5XX XXX XX XX"
+      />
+
+      <label for="sehir">Şehir:</label>
+      <select id="sehir" name="sehir">
+        <option value="">-- Şehir Seçin --</option>
+        <option value="ankara">Ankara</option>
+        <option value="istanbul">İstanbul</option>
+        <option value="izmir">İzmir</option>
+        <option value="bursa">Bursa</option>
+        <option value="antalya">Antalya</option>
+      </select>
+
+      <label for="konu"
+        >Konu
+        <h5 style="display: table-caption; color: rgb(222, 62, 62)">*</h5>
+        :</label
+      >
+      <input
+        type="text"
+        id="konu"
+        name="konu"
+        placeholder="Konu başlığını girin.."
+      />
+
+      <label for="mesaj"
+        >Mesajınız
+        <h5 style="display: table-caption; color: rgb(222, 62, 62)">*</h5>
+        :</label
+      >
+      <textarea
+        id="mesaj"
+        name="mesaj"
+        placeholder="Mesajınızı girin.."
+      ></textarea>
+
+      <label for="dosya">Dosya Seçin:</label>
+      <input type="file" id="dosya" name="dosya" />
+      <p style="color: #fff; font-size: 10px">
+        <i> * alanların girilmesi zorunludur.</i>
+      </p>
+      <br /><br />
+      <div class="buttons">
+        <button type="reset" class="clear-button">Temizle</button>
+        <button type="submit" class="gonder-btn">Gönder</button>
+      </div>
+    </form>
+  </body>
+</html>

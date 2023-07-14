@@ -1,0 +1,153 @@
+body {
+  font-family: "Roboto Mono";
+  margin: 0;
+  border: #361500 20px solid;
+  background-image: url(/images/galata-kulesi-galata-bridge-galata-istanbul-turkey-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#main-navbar {
+  padding: 20px;
+}
+
+#main-navbar a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #62760c;
+  border-bottom: 5px solid #535204;
+  border-right: 5px solid #535204;
+  border-top: 1px solid #535204;
+  border-left: 1px solid #535204;
+  border-radius: 10px;
+  margin: 10px;
+  width: fit-content;
+}
+
+#main-navbar a:first-child {
+  margin-left: 0;
+}
+
+#main-navbar a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #main-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #main-navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #main-navbar a:first-child {
+    margin-top: 0;
+  }
+
+  #main-navbar a:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#giris {
+  border-bottom: 5px solid #535204;
+  border-right: 5px solid #535204;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 50px;
+  background-color: #62760c;
+  margin: 10px;
+  padding: 10px;
+  color:#aaa94f ;
+}
+* {
+  box-sizing: border-box;
+}
+
+a:hover {
+  background-color: #8ba515;
+}
+a:active {
+  background-color: #a5af76;
+}
+#giris:hover {
+  background-color: #8ba515;
+}
+#giris:active {
+  background-color: #a5af76;
+}
+img {
+  width: 500px;
+  height: 375px;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  height: 375px;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+.slider-content {
+  position: absolute;
+  width: 500%;
+  left: 0;
+  animation: slide 20s infinite;
+}
+.slider-item {
+  width: 20%;
+  float: left;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-500px);
+  }
+  20% {
+    transform: translateX(-500px);
+  }
+  30% {
+    transform: translateX(-1000px);
+  }
+  40% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(-1500px);
+  }
+  60% {
+    transform: translateX(-1500px);
+  }
+  70% {
+    transform: translateX(-2000px);
+  }
+  80% {
+    transform: translateX(-2000px);
+  }
+  90% {
+    transform: translateX(0px);
+  }
+}
+#div-istanbul {
+  background-color: #361500;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #b5b486;
+  opacity: 0.9;
+  text-align: center;
+}

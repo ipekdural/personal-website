@@ -1,0 +1,185 @@
+#main-navbar {
+    padding: 20px;
+  }
+  
+  #main-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #62760c;
+    border-bottom: 5px solid #535204;
+    border-right: 5px solid #535204;
+    border-top: 1px solid #535204;
+    border-left: 1px solid #535204;
+    border-radius: 10px;
+    margin: 10px;
+    width: fit-content;
+  }
+  
+  #main-navbar a:first-child {
+    margin-left: 0;
+  }
+  
+  #main-navbar a:last-child {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #main-navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    #main-navbar a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    #main-navbar a:first-child {
+      margin-top: 0;
+    }
+  
+    #main-navbar a:last-child {
+      margin-bottom: 0;
+    }
+  }
+  #giris {
+    border-bottom: 5px solid #535204;
+    border-right: 5px solid #535204;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 50px;
+    background-color: #62760c;
+    color: #aaa94f; padding:10px;
+  
+    margin: 10px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  a:hover {
+    background-color: #8ba515;
+  }
+  a:active {
+    background-color: #a5af76;
+  }
+  #giris:hover {
+    background-color: #8ba515;
+  }
+  #giris:active {
+    background-color: #a5af76;
+  }
+  body{
+    background-image: url(/images/arkaplan1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"Roboto Mono";
+    border: 20px solid #361500;
+    margin: 0;
+    
+  }
+ 
+
+/* Form stilini sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Form ana bileşenleri */
+form {
+  color:#b5b486;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: -2px 1px 10px black;
+  margin: 150px auto;
+  overflow-x: hidden;
+}
+
+label {
+  
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content:space-evenly;
+  
+}
+
+button[type="reset"],
+button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: rgb(226, 35, 35);
+  font-size: 20px;
+  border-bottom:2px black solid;
+  border-right: 2px black solid;
+  box-shadow: 2px black ;
+}
+
+.gonder-btn {
+  background-color: rgb(76, 177, 76);
+  font-size: 20px;
+  border-bottom:2px black solid;
+  border-right: 2px black solid;
+  box-shadow: 2px black ;
+}
+
+form input:focus{
+  border: 2px solid rgb(182, 182, 236);
+  opacity: 0.9;
+}
+.clear-button:hover{
+background-color: rgb(190, 129, 129);
+}
+.gonder-btn:hover{
+  background-color: rgb(114, 186, 114);
+}
+p{
+  color: red;
+}

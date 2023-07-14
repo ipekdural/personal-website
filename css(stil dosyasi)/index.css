@@ -1,0 +1,139 @@
+#main-navbar {
+  padding: 20px;
+}
+
+#main-navbar a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #62760c;
+  border-bottom: 5px solid #535204;
+  border-right: 5px solid #535204;
+  border-top: 1px solid #535204;
+  border-left: 1px solid #535204;
+  border-radius: 10px;
+  margin: 10px;
+  width: fit-content;
+}
+
+#main-navbar a:first-child {
+  margin-left: 0;
+}
+
+#main-navbar a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #main-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #main-navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #main-navbar a:first-child {
+    margin-top: 0;
+  }
+
+  #main-navbar a:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#table-hobi {
+  font-size: 20px;
+  height: 500px;
+
+  color: #a5af76;
+}
+#table-hobi a {
+  color: #c7cab6;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-left: 10px;
+}
+p {
+  font-size: 20px;
+}
+
+#giris {
+  border-bottom: 5px solid #535204;
+  border-right: 5px solid #535204;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 50px;
+  background-color: #62760c;
+  color: #aaa94f;
+  padding: 10px;
+
+  margin: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  height: 30px;
+  border-width: 0;
+  color: #361500;
+  background-color: #361500;
+}
+img {
+  border-top: 2px solid #361500;
+  border-bottom: 5px solid #361500;
+  border-left: 2px solid #361500;
+  border-right: 5px solid #361500;
+}
+a:hover {
+  background-color: #8ba515;
+}
+a:active {
+  background-color: #a5af76;
+}
+#giris:hover {
+  background-color: #8ba515;
+}
+#giris:active {
+  background-color: #a5af76;
+}
+
+#div-hakkımda {
+  color: #c7cab6;
+  margin: 200px;
+  padding: 50px;
+  background-color: #361500;
+  opacity: 0.5;
+}
+body {
+  background-image: url(/images/arkaplan1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto Mono";
+  border: 20px solid #361500;
+  margin: 0;
+}
+#div-hakkımda a {
+  color: #c7cab6;
+  font-weight: bolder;
+}
+#div-hobilerim {
+  background-color: #361500;
+  opacity: 0.5;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
